@@ -53,10 +53,10 @@ const fetchIssues = () => {
     if (status == 'Closed') {
       ++count;
       issuesList.innerHTML += `<div class="well">
-                              <h6>Issue ID: ${id.strike()} </h6>
+                              <h6>Issue ID: ${id} </h6>
                               <p><span class="label label-info"> ${status} </span></p>
                               <h3> ${description.strike()} </h3>
-                              <p><span class="glyphicon glyphicon-time"></span> ${severity.strike()}</p>
+                              <p><span class="glyphicon glyphicon-time"></span> ${severity}</p>
                               <p><span class="glyphicon glyphicon-user"></span> ${assignedTo}</p>
                               <a href="#" onclick="closeIssue(${id})" class="btn btn-warning">Close</a>
                               <a href="#" onclick="deleteIssue(${id})" class="btn btn-danger">Delete</a>
